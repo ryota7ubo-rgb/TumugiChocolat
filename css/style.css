@@ -1,0 +1,81 @@
+/* webページ全体共通スタイル */
+html{
+   font-family: "Noto Serif JP", serif;
+   font-size: 16px;
+   background-color: #FDFBF7;
+   color: #3D3936;
+   line-height: 1.8;
+}
+
+/* フォント */
+.font-main {
+    font-family: "shippori Mincho", serif;
+}
+
+.font-sub {
+    font-family: "Noto Serif JP", sans-serif;
+}
+
+/* 共通部分 */
+/* ヘッダー */
+.page-header{
+    text-align: center;
+    height: 108px;
+    align-content: center;
+}
+
+.page-header a{
+    color: #000000;
+}
+
+.page-main-title{
+    font-family: "Playfair Display", serif;
+    font-size: 1.7rem;
+    margin-bottom: 16px;
+    font-weight: 400;
+}
+
+/* nav */
+.page-transition ul{
+    display: flex;
+    justify-content: center;
+    gap: 36px;
+    list-style: none;
+}
+
+.page-transition a{
+    font-family: "Poppins", sans-serif;
+    color: #3D3936;
+    text-decoration: none;
+    transition: transform 0.3s; 
+}
+
+.page-transition a.is-active{
+    color:#C8956D ;
+}
+
+/* p */
+p{
+    line-height: 1.5;
+}
+
+/* img */
+.img{
+    aspect-ratio: 1 / 1
+}
+
+/* フッター */
+.page-footer{
+    background-color: #F5EFE6;
+    font-family: "Poppins", sans-serif;
+}
+
+.copyright{
+    color: #7A7370;
+}
+
+
+
+
+
+/* top用 */
