@@ -1,0 +1,10 @@
+/* 全ページ共通部分 */
+/* フォント */
+.font-main {
+    font-family: "shippori Mincho", serif;
+}
+
+.font-sub {
+    font-family: "Noto Serif JP", sans-serif;
+}
+/* top用 */
