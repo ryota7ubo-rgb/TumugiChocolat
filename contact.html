@@ -12,6 +12,50 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <main>
+        <section class="contact-top">
+            <h1>お問い合わせ</h1>
+            <p>商品に関するご質問や、取材・お取引のご相談など、お気軽にお問い合わせください。
+                内容を確認のうえ、担当より折り返しご連絡いたします。</p>
+        </section>
+        <section class="contact-main">
+            <h2>連絡先</h2>
+            <table>
+                <tr>
+                    <td>社名</td>
+                    <td>【会社名】</td>
+                </tr>
+                <tr>
+                    <td>電話</td>
+                    <td>【電話番号】</td>
+                </tr>
+                <tr>
+                    <td>メール</td>
+                    <td>【メールアドレス】</td>
+                </tr>
+                <tr>
+                    <td>受付時間</td>
+                    <td>【受付時間】</td>
+                </tr>
+            </table>
+            <form action="送信先のURL" method="post">
+                <label for="name">お名前</label>
+                <input id="name" type="text" name="name" placeholder="紬　花子" required>
+                <label for="email">メールアドレス</label>
+                <input id="email" type="email" name="email" placeholder="email@co.jp" required></p>
+                <label for="contact-type">お問い合わせ種別</label>
+                    <select id="contact-type" name="contact-type" required>
+                        <option value="" disabled selected>選択してください</option>
+                        <option value="商品について">商品に関するご質問</option>
+                        <option value="商品について">取材のご依頼</option>
+                        <option value="商品について">お取引のご相談</option>
+                        <option value="その他">その他</option>
+                    </select>
+                <label for="message">お問い合わせ内容</label>
+                <textarea id="message" name="message" placeholder="詳細をご記入下さい" required></textarea>
+                <button type="submit">送信する</button>
+                </form>
+        </section>
+    </main>
 </body>
 </html>
