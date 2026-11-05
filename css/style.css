@@ -440,6 +440,11 @@ a{
     border-radius: 5px;
 }
 
+.goods-contents-item img {
+    width: 50%;
+    height: 50%;
+}
+
 
 
 
