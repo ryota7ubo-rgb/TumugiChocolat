@@ -407,15 +407,17 @@ a{
 /* story用 */
 .story-background{
     background-color: #223A5E;
+    display: flex;
+    justify-content: center;
 }
 
 .story-container{
-    width: 417px;
+    width: 1032px;
     color: #F5F1E8;
     margin: 0;
     padding: 50px 0;
     height: 306px;
-    text-align: center;
+    text-align: start;
 }
 .story-title{
     border-top: 1px solid #C9A227;
@@ -429,17 +431,52 @@ a{
 }
 
 
+.story-container0{
+    background-color: #F5F1E8;
+    display: flex;
+    height: 596px;
+    text-align: start;
+    padding: 64px 0;
+}
+.story-img{
+    padding-top: 5px;
+}
+.story-number-title{
+    padding: 5px 0;
+}
+.story-container1{
+    margin-right: 48px;
+}
+.story-container2{
+    margin-right: 48px;
+}
+.number-img{
+    width: 200px;
+    height: 200px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.story-main-background{
+    background-color: #F5F1E8;
+    width: 100%;
+    
+}
+.story-main0{
+    width: 1032px;
+}
+.story-main1{
+    display: flex;
+    justify-content: space-around;
+}
+.story-main-img{
+    width: 476px;
+    height: 317px;
+}
+/* .main-space1{
+    margin-right: 80px;
+}
+.main-space2{
+    margin-left: 80px;
+} */
 
 
 
