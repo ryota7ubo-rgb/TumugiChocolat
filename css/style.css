@@ -1161,6 +1161,65 @@ h2 {
 
 
 @media (max-width: 700px) {
+/* 共通部分 */
+/* ヘッダー */
+    .page-main-title{
+        font-size: 1.8rem;
+        font-weight: normal;
+        margin: 8px;
+    }
+
+    .page-header ul{
+        display: none;
+    }
+
+/* フッター */
+    .page-footer{
+        font-size: .8rem;
+        border-top: 1px solid #C8956D;
+    }
+
+    .footer-content{
+        margin:0px 18px 0px;
+    }
+
+    .footer-info span{
+        border-bottom: 1.5px solid #e49f45;
+        padding-bottom: 8px;
+    }
+
+    .tel-content,.mail-content,.time-content{
+        width: 20%;
+        line-height: 2;
+    }
+
+    .footer-btn{
+        border: 1px solid #e49f45;
+        font-size: .9rem;
+        padding: 9px;
+        margin-top: 24px;
+    }
+
+    .sns-icon{
+        font-size: .8rem;
+    }
+
+    .icon-content li{
+        padding: 10px;
+        border:1px solid #fff;
+        margin: 7px;
+        width: 48px;
+        height: 48px;
+        color: #223A5E;
+        background-color: #fff;
+    }
+
+    .footer-transition{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
 /* top用 */
 
 
