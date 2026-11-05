@@ -302,8 +302,28 @@ p{
 
 
 /* story用 */
+.story-background{
+    background-color: #223A5E;
+}
 
+.story-container{
+    width: 417px;
+    color: #F5F1E8;
+    margin: 0;
+    padding: 50px 0;
+    height: 306px;
+    text-align: center;
+}
+.story-title{
+    border-top: 1px solid #C9A227;
+    border-bottom: 1px solid #C9A227;
+    padding-bottom: 25px;
+    margin: 0 ;
+}
+.story-sub-title{
+    padding-top: 25px;
 
+}
 
 
 
