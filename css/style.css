@@ -397,15 +397,40 @@ a{
     font-size: 1.2rem;
 }
 
-.goods-shop {
+.goods-sns-content {
     text-align: center;
     margin: 20px 0;
 }
 
-.goods-shop-item {
+.goods-icon-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.goods-icon-content ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.goods-icon-content li {
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods-icon-content p {
+    margin: 0;
+}
+
+.goods-shop-text {
+    margin: 20px 0;
 }
 
 .goods-button {
@@ -414,6 +439,14 @@ a{
     padding: 10px 50px;
     border-radius: 5px;
 }
+
+.goods-contents-item img {
+    width: 50%;
+    height: 50%;
+}
+
+
+
 
 
 /* story用 */
