@@ -79,18 +79,43 @@ p{
 
 
 /* top用 */
-.btn{
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #C8956D;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
+.top-hero {
+    position: relative;
+    background-image: url('../images/2b2b2b.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    max-height: 836px;
+    height: clamp(300px, 42vw, 836px);
 }
 
+.top-hero-title {
+    position: absolute;
+    left: clamp(48px, 7vw, 114px);
+    top: clamp(100px, 20vw, 260px);
+}
 
+.top-hero-main-title {
+    color: #F5F1E8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0.2rem;
+    border-left: 1px solid #C9A227;
+    padding-left: clamp(12px, 1.8vw, 28px);
+}
 
+.top-hero-sub-title {
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.25em;
+    color: #F5F1E8;
+    margin-top: 30px;
+}
 
 
 
