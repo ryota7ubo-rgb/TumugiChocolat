@@ -1,13 +1,7 @@
-/* webページ全体共通スタイル */
-html{
-   font-family: "Noto Serif JP", serif;
-   font-size: 16px;
-   background-color: #FDFBF7;
-   color: #3D3936;
-   line-height: 1.8;
-}
-
 /* フォント */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
+
 .font-main {
     font-family: "shippori Mincho", serif;
 }
@@ -15,6 +9,15 @@ html{
 .font-sub {
     font-family: "Noto Serif JP", sans-serif;
 }
+/* webページ全体共通スタイル */
+html{
+   font-family: "Noto Serif JP", serif;
+   font-size: 16px;
+   background-color: #F5F1E8;
+   color: #2B2B2B;
+   line-height: 1.8;
+}
+
 
 /* 共通部分 */
 /* ヘッダー */
@@ -33,7 +36,7 @@ html{
 }
 
 .page-main-title{
-    font-family: "Playfair Display", serif;
+    font-family: "Noto Serif JP", sans-serif;
     font-size: 1.7rem;
     margin-bottom: 16px;
     font-weight: 400;
@@ -48,7 +51,7 @@ html{
 }
 
 .page-transition a{
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto+Sans+JP", sans-serif;
     color: #3D3936;
     text-decoration: none;
     transition: transform 0.3s; 
@@ -67,7 +70,7 @@ html{
 }
 
 .page-transition a{
-    font-family: "Poppins", sans-serif;
+    font-family: "Noto+Sans+JP", sans-serif;
     color: #3D3936;
     text-decoration: none;
     transition: transform 0.3s; 
@@ -77,9 +80,16 @@ html{
     color:#C8956D ;
 }
 
+/* h */
+h1,h2,h3{
+    line-height: 1.5;
+    font-family: "Noto Serif JP", sans-serif;
+}
+
 /* p */
 p{
     line-height: 1.5;
+    font-family: "Noto+Sans+JP", sans-serif;
 }
 
 /* img */
@@ -182,6 +192,8 @@ a{
 
 .footer-transition a.is-active{
     color:#C8956D ;
+    font-family: "Noto+Sans+JP", sans-serif;
+
 }
 
 .copyright{
@@ -614,6 +626,31 @@ a{
         gap: 20px;
     }
 }
+.shopping-background {
+    background-color: #223a5e;
+}
+
+.shopping-container {
+    width: 400px;
+    margin: 0;
+    padding: 30px 0;
+    height: 200px;
+    color: #f5f1e8;
+    text-align: center;
+}
+
+.main-shopping {
+    border-bottom: 1px solid #c9a227;
+    border-top: 1px solid #c9a227;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+.sub-shopping {
+    padding: 20px;
+    white-space: nowrap;
+}
+
 h2 {
     display: block;
     text-align: flex-start;
@@ -816,7 +853,7 @@ h2 {
 }
 
 .contact-top h2 span {
-   padding: 10px o;
+   padding: 10px 0;
    border-bottom: 1px solid #c9A227;
 }
 
@@ -829,13 +866,13 @@ h2 {
 .contact-main {
     display: flex;
     gap: 80px;                 /* 左右カラムの間隔 */
-    padding: 60px 100px;       /* 上下 左右 (帯の左右100pxと揃える) */
+    padding: 60px 150px;       /* 上下 左右 (帯の左右100pxと揃える) */
     background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
 }
 
 .contact-info,
 .contact-form {
-    flex: 1;                   /* 左右を同じ幅に */
+    flex: 1.5;                   /* 左右を同じ幅に */
 }
 
 .contact-info h3 {
@@ -852,7 +889,7 @@ h2 {
 }
 
 .table td {
-    padding: 20px 8px;
+    padding: 25px 8px;
     font-size: 0.8rem;
     border-bottom: 1px solid #c9A227;
 }
@@ -865,10 +902,27 @@ h2 {
     width: 30%;                 /* 「社名」「電話」の列の幅 */
 }
 
+.form {
+   border-top: dashed;
+   border-left: dashed;
+   border-bottom: dashed; 
+   border-color:#c9A227;
+   padding: 30px;
+}
+
 .contact-form h2 {
     font-family: "Shippori Mincho", serif;
     font-size: 1rem;
+    color: #223A5E;
     margin: 0 0 10px;
+    padding: 12px 0;
+}
+
+.form-group label {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    color: #6D2E46;
+    display: block;          
 }
 
 .contact-form p {
@@ -880,10 +934,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;            /* ラベルを入力欄の上に */
-    font-size: 0.75rem;
-    margin-bottom: 6px;
+.form-group input {
+    height: 40px;
 }
 
 .form-group input,
@@ -899,17 +951,17 @@ h2 {
 }
 
 .form-group textarea {
-    height: 140px;
+    height: 85px;
     resize: vertical;          /* 縦方向だけ大きさ変更できる */
 }
 
 .contact-form button {
-    padding: 12px 40px;
+    padding: 8px 40px;
     background-color: #223A5E; /* 帯と同じ紺色 */
     color: #fff;
     border: none;
-    border-radius: 2px;
-    font-size: 0.85rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
     cursor: pointer;
 }
 
