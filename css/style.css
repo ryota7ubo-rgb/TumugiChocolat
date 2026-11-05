@@ -95,126 +95,27 @@ p{
     left: clamp(48px, 7vw, 114px);
     top: clamp(100px, 20vw, 260px);
 }
-/* contact用 */
-.contact-top {
-    background-color: #223A5E;
-    border-bottom: 1px solid #c9A227;
-    color: #fff;
-    text-align: left;
-    box-sizing: border-box;   /* padding を足しても高さ200pxのまま */
-    height: 200px;
-    padding: 40px 0;        /* ← ここを増やすほど文字が下がる */
-    border-bottom: 1px solid #c9A227;
-}
-   
-.contact-top h2 {
-    font-family: "shippori Mincho", serif;
-    padding: 12px 110px;
-    font-size: 1.1rem;
-    border-top: 1px solid #c9A227;
+.top-hero-main-title {
+    color: #F5F1E8;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 32px;
+    letter-spacing: 0.2rem;
+    border-left: 1px solid #C9A227;
+    padding-left: clamp(12px, 1.8vw, 28px);
 }
 
-.contact-top h2 span {
-   padding: 10px o;
-   border-bottom: 1px solid #c9A227;
+.top-hero-sub-title {
+    font-size: clamp(0.75rem, 1vw, 1rem);
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0.25em;
+    color: #F5F1E8;
+    margin-top: 30px;
 }
 
-.contact-top p {
-    margin-left: 100px;
-    font-size: 0.75rem;
-    padding: 15px 10px;
-}
-
-.contact-main {
-    display: flex;
-    gap: 80px;                 /* 左右カラムの間隔 */
-    padding: 60px 100px;       /* 上下 左右 (帯の左右100pxと揃える) */
-    background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
-}
-
-.contact-info,
-.contact-form {
-    flex: 1;                   /* 左右を同じ幅に */
-}
-
-.contact-info h3 {
-    font-family: "shippori Mincho", serif;
-    font-size: 0.9rem;
-    color: #223A5E;
-    padding: 12px 0;
-    border-bottom: 1px solid #c9A227;
-}
-
-.table  {
-    width: 100%;
-    border-collapse: collapse;  /* 線のすき間をなくす */
-}
-
-.table td {
-    padding: 20px 8px;
-    font-size: 0.8rem;
-    border-bottom: 1px solid #c9A227;
-}
-
-.table td p {
-    font-size: 0.7rem;
-    color: #6D2E46;
-}
-.table td:first-child {
-    width: 30%;                 /* 「社名」「電話」の列の幅 */
-}
-
-.contact-form h2 {
-    font-family: "Shippori Mincho", serif;
-    font-size: 1rem;
-    margin: 0 0 10px;
-}
-
-.contact-form p {
-    font-size: 0.7rem;
-    margin: 0 0 24px;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;            /* ラベルを入力欄の上に */
-    font-size: 0.75rem;
-    margin-bottom: 6px;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
-    width: 100%;               /* 横幅いっぱい */
-    box-sizing: border-box;    /* paddingを入れても はみ出さない */
-    padding: 10px;
-    font-size: 0.8rem;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-    background-color: #fff;
-}
-
-.form-group textarea {
-    height: 140px;
-    resize: vertical;          /* 縦方向だけ大きさ変更できる */
-}
-
-.contact-form button {
-    padding: 12px 40px;
-    background-color: #223A5E; /* 帯と同じ紺色 */
-    color: #fff;
-    border: none;
-    border-radius: 2px;
-    font-size: 0.85rem;
-    cursor: pointer;
-}
-
-.contact-form button:hover {
-    opacity: 0.85;
-}
 
 
 
@@ -785,62 +686,161 @@ h2 {
 
 
 /* contact用 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.top-hero-main-title {
-    color: #F5F1E8;
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 32px;
-    letter-spacing: 0.2rem;
-    border-left: 1px solid #C9A227;
-    padding-left: clamp(12px, 1.8vw, 28px);
+.contact-top {
+    background-color: #223A5E;
+    border-bottom: 1px solid #c9A227;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;   /* padding を足しても高さ200pxのまま */
+    height: 200px;
+    padding: 40px 0;        /* ← ここを増やすほど文字が下がる */
+    border-bottom: 1px solid #c9A227;
+}
+   
+.contact-top h2 {
+    font-family: "shippori Mincho", serif;
+    padding: 12px 110px;
+    font-size: 1.1rem;
+    border-top: 1px solid #c9A227;
 }
 
-.top-hero-sub-title {
-    font-size: clamp(0.75rem, 1vw, 1rem);
-    font-weight: 400;
-    line-height: 100%;
-    letter-spacing: 0.25em;
-    color: #F5F1E8;
-    margin-top: 30px;
+.contact-top h2 span {
+   padding: 10px o;
+   border-bottom: 1px solid #c9A227;
 }
+
+.contact-top p {
+    margin-left: 100px;
+    font-size: 0.75rem;
+    padding: 15px 10px;
+}
+
+.contact-main {
+    display: flex;
+    gap: 80px;                 /* 左右カラムの間隔 */
+    padding: 60px 100px;       /* 上下 左右 (帯の左右100pxと揃える) */
+    background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;                   /* 左右を同じ幅に */
+}
+
+.contact-info h3 {
+    font-family: "shippori Mincho", serif;
+    font-size: 0.9rem;
+    color: #223A5E;
+    padding: 12px 0;
+    border-bottom: 1px solid #c9A227;
+}
+
+.table  {
+    width: 100%;
+    border-collapse: collapse;  /* 線のすき間をなくす */
+}
+
+.table td {
+    padding: 20px 8px;
+    font-size: 0.8rem;
+    border-bottom: 1px solid #c9A227;
+}
+
+.table td p {
+    font-size: 0.7rem;
+    color: #6D2E46;
+}
+.table td:first-child {
+    width: 30%;                 /* 「社名」「電話」の列の幅 */
+}
+
+.contact-form h2 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1rem;
+    margin: 0 0 10px;
+}
+
+.contact-form p {
+    font-size: 0.7rem;
+    margin: 0 0 24px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;            /* ラベルを入力欄の上に */
+    font-size: 0.75rem;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;               /* 横幅いっぱい */
+    box-sizing: border-box;    /* paddingを入れても はみ出さない */
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+}
+
+.form-group textarea {
+    height: 140px;
+    resize: vertical;          /* 縦方向だけ大きさ変更できる */
+}
+
+.contact-form button {
+    padding: 12px 40px;
+    background-color: #223A5E; /* 帯と同じ紺色 */
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
