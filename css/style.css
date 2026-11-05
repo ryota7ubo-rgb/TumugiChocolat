@@ -611,13 +611,22 @@ a{
     text-align: center;
 }
 
-.main-shopping {
+.shopping-top-border{
+    height: 48px;
     border-bottom: 1px solid #c9a227;
-    border-top: 1px solid #c9a227;
-    padding-bottom: 20px;
-    margin: 0;
+    background-color: #223a5e;
 }
 
+.main-shopping{ 
+    font-family: "shippori Mincho", serif;
+    padding: 12px 110px;
+    font-size: 1.1rem;
+}
+
+.main-shopping span {
+    padding: 10px 0;
+    border-bottom: 1px solid #c9a227;
+}
 .sub-shopping {
     padding: 20px;
     white-space: nowrap;
