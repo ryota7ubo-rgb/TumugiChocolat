@@ -29,6 +29,8 @@ html{
     align-items: center;
     margin-right: 24px;
     margin-left: 24px;
+    position: relative;
+    z-index: 10;
 }
 
 .page-header a{
@@ -40,6 +42,10 @@ html{
     font-size: 1.7rem;
     margin-bottom: 16px;
     font-weight: 400;
+}
+
+.menu-toggle{
+    display: none;
 }
 
 /* nav */
@@ -1044,14 +1050,83 @@ h2 {
 @media (max-width: 700px) {
 /* 共通部分 */
 /* ヘッダー */
+    .page-header{
+        margin-right: 16px;
+        margin-left: 16px;
+    }
+
     .page-main-title{
         font-size: 1.8rem;
         font-weight: normal;
         margin: 8px;
     }
 
-    .page-header ul{
+    .menu-toggle{
+        width: 44px;
+        height: 44px;
+        padding: 10px;
+        border: 1px solid #C8956D;
+        border-radius: 4px;
+        background: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 5px;
+        cursor: pointer;
+    }
+
+    .menu-toggle span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        background-color: #3D3936;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:first-child{
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"] span:nth-child(2){
+        opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"] span:last-child{
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .page-header.menu-ready:not(.menu-open) .page-transition{
         display: none;
+    }
+
+    .page-transition{
+        position: absolute;
+        top: 100%;
+        right: -16px;
+        left: -16px;
+        padding: 8px 16px 16px;
+        background-color: #F5F1E8;
+        border-top: 1px solid rgba(200, 149, 109, 0.45);
+        box-shadow: 0 8px 16px rgba(34, 28, 24, 0.12);
+    }
+
+    .page-transition ul{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .page-transition li{
+        border-bottom: 1px solid rgba(200, 149, 109, 0.3);
+    }
+
+    .page-transition a{
+        display: block;
+        padding: 12px 8px;
+    }
+
+    .page-header.menu-open .page-transition{
+        display: block;
     }
 
 /* フッター */
