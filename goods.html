@@ -15,7 +15,13 @@
     <header class="page-header">
         <h2 class="page-main-title"><a href="./top.html">紬ショコラ</a></h2>
 
-        <nav class="page-transition">
+        <button class="menu-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <nav class="page-transition" id="site-navigation">
             <ul>
                 <li><a href="./top.html">HOME</a></li>
                 <li><a class="is-active" href="./goods.html">商品の特徴</a></li>
@@ -28,9 +34,6 @@
     
     <main>
         <div class="goods-main-title">
-            <div>
-                <!-- border -->
-            </div>
 
             <div class="goods-title-text">
                 <h1>紬ショコラの、三つの特長。</h1>
@@ -40,8 +43,8 @@
 
         <div class="goods-contents">
 
-            <div class="goods-contents-item">
-                <img src="" alt="生チ">
+            <div class="goods-contents-item goods-border-top">
+                <img src="images/2b2b2b.png" alt="生チ">
                 <section>
                     <p class="goods-contents-color">小豆とほうじ茶、二つの余韻</p>
                     <h2>味</h2>
@@ -53,8 +56,8 @@
                 </section>
             </div>
 
-            <div class="goods-contents-item">
-                <img src="" alt="小豆">
+            <div class="goods-contents-item goods-border-center">
+                <img src="images/2b2b2b.png" alt="小豆">
                 <section>
                     <p class="goods-contents-color">地元で育った素材</p>
                     <h2>素材</h2>
@@ -66,11 +69,11 @@
                 </section>
             </div>
 
-            <div class="goods-contents-item">
-                <img src="" alt="化粧">
+            <div class="goods-contents-item goods-border-bottom">
+                <img src="images/2b2b2b.png" alt="化粧">
                 <section>
                     <p class="goods-contents-color">贈りたくなる佇まい</p>
-                    <h2>パッケージ</h2>
+                    <h2">パッケージ</h2>
                     <p class="goods-contents-text">
                         黒を基調にしたマットな箱に、金箔押し風の帯を添えました。
                         内部は2段構成で仕切りに和紙を使用し、金のシールで封をします。
@@ -78,18 +81,20 @@
                     </p>
                 </section>
             </div>
-            <div class="goods-shop">
-                <section>
-                    <div class="goods-shop-item">
-                        <p>X</p>
-                        <p>LINE</p>
-                        <p>IG</p>
-                        <p>#紬ショコラ</p>
-                    </div>
-                    <p>紬ショコラが買えるお店を探す</p>
-                    <button class="goods-button">取扱店舗を見る</button>
-                </section>
-            </div>
+        </div>
+        <div class="goods-shop">
+            <section>
+                <div class="goods-shop-item">
+                    <ul>
+                        <li>X</li>
+                        <li>LINE</li>
+                        <li>IG</li>
+                    </ul>
+                    <p class="goods-shop-4">#紬ショコラ</p>
+                </div>
+                <p class="goods-shop-tumugi">紬ショコラが買えるお店を探す</p>
+                <button class="goods-button">取扱店舗を見る</button>
+            </section>
         </div>
     </main>
 
@@ -160,6 +165,6 @@
 
     </footer>
      
-    <script src="js/script.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
