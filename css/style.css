@@ -1062,28 +1062,28 @@ h2 {
 /* contact用 */
 .contact-top {
     background-color: #223A5E;
-    border-bottom: 1px solid #c9A227;
     color: #fff;
     text-align: left;
     box-sizing: border-box;   /* padding を足しても高さ200pxのまま */
-    height: 200px;
+    height: 190px;
     padding: 40px 0;        /* ← ここを増やすほど文字が下がる */
     border-top: 1px solid #c9A227;
 }
    
-.contact-top h2 {
+.contact-top h1 {
     font-family: "shippori Mincho", serif;
     padding: 12px 110px;
-    font-size: 1.1rem;
+    font-size: 2rem;
     border-top: 1px solid #c9A227;
 }
 
-.contact-top h2 span {
+.contact-top h1 span {
    padding: 10px 0;
    border-bottom: 1px solid #c9A227;
 }
 
 .contact-top p {
+    font-family: "Noto Sans JP", sans-serif;
     margin-left: 100px;
     font-size: 0.75rem;
     padding: 15px 10px;
@@ -1092,18 +1092,27 @@ h2 {
 .contact-main {
     display: flex;
     gap: 80px;                 /* 左右カラムの間隔 */
-    padding: 60px 150px;       /* 上下 左右 (帯の左右100pxと揃える) */
+    padding: 60px 120px;       /* 上下 左右 (帯の左右100pxと揃える) */
     background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
+    margin : 0 16px
 }
 
 .contact-info,
 .contact-form {
-    flex: 1.5;                   /* 左右を同じ幅に */
+    flex: 1;                   /* 左右を同じ幅に */
 }
 
-.contact-info h3 {
+.contact-info {
+    height: 330px;
+}
+
+.contact-form {
+    height: 560px;
+}
+
+.contact-info h2 {
     font-family: "shippori Mincho", serif;
-    font-size: 0.9rem;
+    font-size: 1.5rem;
     color: #223A5E;
     padding: 12px 0;
     border-bottom: 1px solid #c9A227;
@@ -1115,13 +1124,14 @@ h2 {
 }
 
 .contact-table td {
-    padding: 25px 8px;
-    font-size: 0.8rem;
+    padding: 20px 8px;
+    font-size: 1rem;
     border-bottom: 1px solid #c9A227;
 }
 
 .contact-table td p {
-    font-size: 0.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
     color: #6D2E46;
 }
 .contact-table td:first-child {
@@ -1133,40 +1143,41 @@ h2 {
    border-left: dashed;
    border-bottom: dashed; 
    border-color:#c9A227;
-   padding: 30px;
+   padding: 25px;
    border-width: 1px;
 }
 
 .contact-form h2 {
     font-family: "Shippori Mincho", serif;
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: #223A5E;
-    padding: 12px 0;
+    padding: 5px 0;
 }
 
 .contact-form p {
-    font-size: 0.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75em;
     margin-bottom: 2px;
     color: #6D2E46;
-    display: block; 
-    margin : 0 0 20px;
+    display: block;
+    margin-bottom: 8px; 
 }
 
-
 .form-group label {
-    font-size: 0.7rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
     margin-bottom: 2px;
     color: #6D2E46;
     display: block;          
 }
 
 .contact-form p {
-    font-size: 0.7rem;
-    margin: 0 0 24px;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .form-group input {
@@ -1183,6 +1194,7 @@ h2 {
     border: 1px solid #ccc;
     border-radius: 2px;
     background-color: #fff;
+    margin-bottom: 5px;
 }
 
 .form-group textarea {
@@ -1846,7 +1858,54 @@ h2 {
 
 
 /* contact用 */
+ .contact-top {
+        text-align: left;  /* 左寄せ */
+         height: 250px;
+    }
+     .contact-top h1 {
+        padding: 12px 20px;
+        border-top: none;
+    }
+    .contact-top p {
+        margin: 20px;
+        padding: 15px 0;
+    }
+    .contact-top h1,
+    .contact-top p {
+        text-align: left;
+  }
 
+    .contact-main {
+        flex-direction: column;  /* 左右カラムを縦に並べる */
+        gap: 40px;               /* 上下の間隔 */
+        padding: 40px 20px;      /* 上下 左右 */
+    }
+    .contact-info h2 {
+        font-family: "shippori Mincho", serif;
+        font-size: 1.5rem;
+        color: #223A5E;
+        padding: 15px 0;
+        border-bottom: 1px solid #c9A227;
+    }
+    .contact-table td {
+        padding: 15px 8px;
+        font-size: 1rem;
+        border-bottom: 1px solid #c9A227;
+    }
+    .contact-info,
+    .contact-form {
+        flex: 1;                 /* 左右を同じ幅に */
+    }
+    .input-form {
+        border-top: dashed;
+        border-left: dashed;
+        border-bottom: dashed; 
+        border-right: dashed;
+        border-color:#c9A227;
+        padding: 30px;
+        border-width: 1px;
+        margin-bottom: 20px;
+    }
 
 
 
