@@ -789,7 +789,7 @@ h2 {
     box-sizing: border-box;   /* padding を足しても高さ200pxのまま */
     height: 200px;
     padding: 40px 0;        /* ← ここを増やすほど文字が下がる */
-    border-bottom: 1px solid #c9A227;
+    border-top: 1px solid #c9A227;
 }
    
 .contact-top h2 {
@@ -849,7 +849,7 @@ h2 {
     width: 30%;                 /* 「社名」「電話」の列の幅 */
 }
 
-.form {
+.input-form {
    border-top: dashed;
    border-left: dashed;
    border-bottom: dashed; 
@@ -862,9 +862,17 @@ h2 {
     font-family: "Shippori Mincho", serif;
     font-size: 1rem;
     color: #223A5E;
-    margin: 0 0 10px;
     padding: 12px 0;
 }
+
+.contact-form p {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    color: #6D2E46;
+    display: block; 
+    margin : 0 0 20px;
+}
+
 
 .form-group label {
     font-size: 0.7rem;
@@ -916,6 +924,7 @@ h2 {
 .contact-form button:hover {
     opacity: 0.85;
 }
+
 
 
 
