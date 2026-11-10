@@ -520,12 +520,25 @@ th{
 
 .goods-main-title {
     background-color: #223A5E;
-    padding: 60px 120px;
+    padding-top: 120px;
+}
+
+.goods-title-border {
+    border-top: 2px solid #c9A227;
+    padding: 60px 240px 120px 240px;
 }
 
 .goods-title-text {
-    margin: 60px 120px;
     color: #fff;
+}
+
+.goods-title-text h1 {
+    margin-bottom: 60px;
+}
+
+.goods-title-text span{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #c9A227;
 }
 
 .goods-contents {
