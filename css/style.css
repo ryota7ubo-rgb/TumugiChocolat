@@ -1671,11 +1671,41 @@ h2 {
 
 
 /* shopping用 */
+.shopping-container {
+    padding: 20px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
 
+.shopping-background {
+    background-color: #223a5e;
+}
 
+.shopping-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px 0;
+    height: auto;
+    color: #f5f1f5;
+    text-align: center;
+}
 
+.shop-item {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    padding: 18px 10px;
+    gap: 8px 10px;
+    border-bottom: 1px solid #c9a227;
+    box-sizing: border-box;
+}
 
-
+.shop-item:first-child {
+    border-top: 1px solid #c9a227;
+}
 
 
 
