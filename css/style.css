@@ -1325,7 +1325,6 @@ h2 {
 @media (max-width: 700px) {
 /* 共通部分 */
 /* ヘッダー */
-     .page-header{
     .page-header{
         margin-right: 16px;
         margin-left: 16px;
@@ -1371,7 +1370,7 @@ h2 {
         transform: translateY(-7px) rotate(-45deg);
     }
 
-    .page-header.menu-ready:not(.menu-open) .page-transition{
+    .menu-toggle[aria-expanded="false"] + .page-transition{
         display: none;
     }
 
@@ -1383,14 +1382,7 @@ h2 {
         min-height: 100vh;
         padding: 80px 24px 24px;
         background-color: #F5F1E8;
-        position: absolute;
-        top: 100%;
-        right: -16px;
-        left: -16px;
-        padding: 8px 16px 16px;
-        background-color: #F5F1E8;
-        border-top: 1px solid rgba(200, 149, 109, 0.45);
-        box-shadow: 0 8px 16px rgba(34, 28, 24, 0.12);
+        overflow-y: auto;
     }
 
     .page-transition ul{
@@ -1431,15 +1423,6 @@ h2 {
         right: 16px;
         z-index: 2;
         border-bottom: 1px solid rgba(200, 149, 109, 0.3);
-    }
-
-    .page-transition a{
-        display: block;
-        padding: 12px 8px;
-    }
-
-    .page-header.menu-open .page-transition{
-        display: block;
     }
 
 /* フッター */
