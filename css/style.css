@@ -217,7 +217,6 @@ a{
     background-position: center center;
     background-repeat: no-repeat;
     width: 100%;
-    max-height: 836px;
     height: clamp(300px, 42vw, 836px);
 }
 
@@ -246,6 +245,159 @@ a{
     color: #F5F1E8;
     margin-top: 30px;
 }
+
+.top-product {
+    background-color: #F5F1E8;
+    padding: 60px 0;
+}
+
+.top-product-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 72px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.top-product-img {
+    width: 476px;
+    flex-shrink: 0;
+}
+
+.top-product-img img {
+    width: 100%;
+    height: 595px;
+    object-fit: cover;
+    display: block;
+    background-color: #2b2b2b;
+}
+
+.top-product-info {
+    width: 100%;
+    max-width: 520px;
+    color: #223A5E;
+}
+
+.top-product-info-type {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    letter-spacing: 0.14em;
+    margin: 0 0 8px;
+}
+
+.top-product-info-type::before {
+    content: "◆";
+    color: #C9A227;
+    font-size: 0.8rem;
+}
+
+.top-product-info-title {
+    font-size: clamp(2rem, 2.2vw, 2.8rem);
+    line-height: 1.3;
+    font-weight: 600;
+    margin: 0 0 16px;
+    font-family: "Shippori Mincho", serif;
+}
+
+.top-product-info-description {
+    margin: 0 0 18px;
+    font-size: 0.96rem;
+    line-height: 1.8;
+    color: #3D3936;
+}
+
+th{
+    width: 100%;
+}
+
+
+
+.top-product-detail,
+.top-product-price,
+.top-product-expiry {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-top: 1px solid #C9A227;
+    font-size: 0.95rem;
+}
+
+.top-product-detail-main,
+.top-product-price-main,
+.top-product-expiry-main {
+    font-weight: 600;
+    color: #223A5E;
+    margin: 0;
+}
+
+.top-product-detail-sub,
+.top-product-price-sub,
+.top-product-expiry-sub {
+    margin: 0;
+    text-align: left;
+    color: #3D3936;
+}
+
+.top-product-note {
+    margin-top: 14px;
+    font-size: 0.72rem;
+    line-height: 1.7;
+    color: #3D3936;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 12px 28px;
+    border: 1px solid #C9A227;
+    background-color: transparent;
+    color: #223A5E;
+    font-size: 0.9rem;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #C9A227;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -403,15 +555,40 @@ a{
     font-size: 1.2rem;
 }
 
-.goods-shop {
+.goods-sns-content {
     text-align: center;
     margin: 20px 0;
 }
 
-.goods-shop-item {
+.goods-icon-content {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
+}
+
+.goods-icon-content ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.goods-icon-content li {
+    border: 1px solid #333;
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.goods-icon-content p {
+    margin: 0;
+}
+
+.goods-shop-text {
+    margin: 20px 0;
 }
 
 .goods-button {
@@ -421,19 +598,29 @@ a{
     border-radius: 5px;
 }
 
+.goods-contents-item img {
+    width: 50%;
+    height: 50%;
+}
+
+
+
+
 
 /* story用 */
 .story-background{
     background-color: #223A5E;
+    display: flex;
+    justify-content: center;
 }
 
 .story-container{
-    width: 417px;
+    width: 1032px;
     color: #F5F1E8;
     margin: 0;
     padding: 50px 0;
     height: 306px;
-    text-align: center;
+    text-align: start;
 }
 .story-title{
     border-top: 1px solid #C9A227;
@@ -447,17 +634,52 @@ a{
 }
 
 
+.story-container0{
+    background-color: #F5F1E8;
+    display: flex;
+    height: 596px;
+    text-align: start;
+    padding: 64px 0;
+}
+.story-img{
+    padding-top: 5px;
+}
+.story-number-title{
+    padding: 5px 0;
+}
+.story-container1{
+    margin-right: 48px;
+}
+.story-container2{
+    margin-right: 48px;
+}
+.number-img{
+    width: 200px;
+    height: 200px;
+}
 
-
-
-
-
-
-
-
-
-
-
+.story-main-background{
+    background-color: #F5F1E8;
+    width: 100%;
+    
+}
+.story-main0{
+    width: 1032px;
+}
+.story-main1{
+    display: flex;
+    justify-content: space-around;
+}
+.story-main-img{
+    width: 476px;
+    height: 317px;
+}
+/* .main-space1{
+    margin-right: 80px;
+}
+.main-space2{
+    margin-left: 80px;
+} */
 
 
 
@@ -604,6 +826,40 @@ a{
         gap: 20px;
     }
 }
+.shopping-background {
+    background-color: #223a5e;
+}
+
+.shopping-container {
+    width: 400px;
+    margin: 0;
+    padding: 30px 0;
+    height: 200px;
+    color: #f5f1e8;
+    text-align: center;
+}
+
+.shopping-top-border{
+    height: 48px;
+    border-bottom: 1px solid #c9a227;
+    background-color: #223a5e;
+}
+
+.main-shopping{ 
+    font-family: "shippori Mincho", serif;
+    padding: 12px 110px;
+    font-size: 1.1rem;
+}
+
+.main-shopping span {
+    padding: 10px 0;
+    border-bottom: 1px solid #c9a227;
+}
+.sub-shopping {
+    padding: 20px;
+    white-space: nowrap;
+}
+
 h2 {
     display: block;
     text-align: flex-start;
@@ -806,7 +1062,7 @@ h2 {
 }
 
 .contact-top h2 span {
-   padding: 10px o;
+   padding: 10px 0;
    border-bottom: 1px solid #c9A227;
 }
 
@@ -819,13 +1075,13 @@ h2 {
 .contact-main {
     display: flex;
     gap: 80px;                 /* 左右カラムの間隔 */
-    padding: 60px 100px;       /* 上下 左右 (帯の左右100pxと揃える) */
+    padding: 60px 150px;       /* 上下 左右 (帯の左右100pxと揃える) */
     background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
 }
 
 .contact-info,
 .contact-form {
-    flex: 1;                   /* 左右を同じ幅に */
+    flex: 1.5;                   /* 左右を同じ幅に */
 }
 
 .contact-info h3 {
@@ -842,7 +1098,7 @@ h2 {
 }
 
 .table td {
-    padding: 20px 8px;
+    padding: 25px 8px;
     font-size: 0.8rem;
     border-bottom: 1px solid #c9A227;
 }
@@ -855,10 +1111,27 @@ h2 {
     width: 30%;                 /* 「社名」「電話」の列の幅 */
 }
 
+.form {
+   border-top: dashed;
+   border-left: dashed;
+   border-bottom: dashed; 
+   border-color:#c9A227;
+   padding: 30px;
+}
+
 .contact-form h2 {
     font-family: "Shippori Mincho", serif;
     font-size: 1rem;
+    color: #223A5E;
     margin: 0 0 10px;
+    padding: 12px 0;
+}
+
+.form-group label {
+    font-size: 0.7rem;
+    margin-bottom: 2px;
+    color: #6D2E46;
+    display: block;          
 }
 
 .contact-form p {
@@ -870,10 +1143,8 @@ h2 {
     margin-bottom: 20px;
 }
 
-.form-group label {
-    display: block;            /* ラベルを入力欄の上に */
-    font-size: 0.75rem;
-    margin-bottom: 6px;
+.form-group input {
+    height: 40px;
 }
 
 .form-group input,
@@ -889,17 +1160,17 @@ h2 {
 }
 
 .form-group textarea {
-    height: 140px;
+    height: 85px;
     resize: vertical;          /* 縦方向だけ大きさ変更できる */
 }
 
 .contact-form button {
-    padding: 12px 40px;
+    padding: 8px 40px;
     background-color: #223A5E; /* 帯と同じ紺色 */
     color: #fff;
     border: none;
-    border-radius: 2px;
-    font-size: 0.85rem;
+    border-radius: 3px;
+    font-size: 0.75rem;
     cursor: pointer;
 }
 
@@ -1051,6 +1322,7 @@ h2 {
 /* 共通部分 */
 /* ヘッダー */
      .page-header{
+    .page-header{
         margin-right: 16px;
         margin-left: 16px;
     }
@@ -1107,6 +1379,14 @@ h2 {
         min-height: 100vh;
         padding: 80px 24px 24px;
         background-color: #F5F1E8;
+        position: absolute;
+        top: 100%;
+        right: -16px;
+        left: -16px;
+        padding: 8px 16px 16px;
+        background-color: #F5F1E8;
+        border-top: 1px solid rgba(200, 149, 109, 0.45);
+        box-shadow: 0 8px 16px rgba(34, 28, 24, 0.12);
     }
 
     .page-transition ul{
@@ -1146,6 +1426,16 @@ h2 {
         top: 18px;
         right: 16px;
         z-index: 2;
+        border-bottom: 1px solid rgba(200, 149, 109, 0.3);
+    }
+
+    .page-transition a{
+        display: block;
+        padding: 12px 8px;
+    }
+
+    .page-header.menu-open .page-transition{
+        display: block;
     }
 
 /* フッター */
