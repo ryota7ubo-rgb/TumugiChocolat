@@ -519,7 +519,7 @@ th{
 /* goods用 */
 
 .goods-main-title {
-    background-color: navy;
+    background-color: #223A5E;
     padding: 60px 120px;
 }
 
@@ -541,9 +541,10 @@ th{
 
 .goods-contents-item {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 100px;
     margin: 120px 240px;
-        padding: 24px;
+    padding: 24px;
 }
 
 .goods-contents-color {
@@ -555,57 +556,60 @@ th{
     font-size: 1.2rem;
 }
 
-.goods-sns-content {
-    text-align: center;
-    margin: 20px 0;
-}
-
-.goods-icon-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-
-.goods-icon-content ul {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
-
-.goods-icon-content li {
-    border: 1px solid #333;
-    border-radius: 5px;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.goods-icon-content p {
-    margin: 0;
-}
-
-.goods-shop-text {
-    margin: 20px 0;
-}
-
-.goods-button {
-    background-color: navy;
-    color: #fff;
-    padding: 10px 50px;
-    border-radius: 5px;
-}
-
 .goods-contents-item img {
     width: 50%;
     height: 50%;
 }
 
+.goods-shop {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
+.goods-shop-item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-content: center;
+    align-items: center;
+}
 
+.goods-shop-item ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
 
+.goods-shop-item li {
+    color: #000;
+    background-color: #fff;
+    padding: 12px;
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+.goods-shop-4 {
+    font-size: 20px;
+}
+
+.goods-shop-tumugi {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.goods-button {
+    background-color: #223A5E;
+    color: #fff;
+    padding: 10px 50px;
+    border-radius: 5px;
+}
 
 /* story用 */
 .story-background{
