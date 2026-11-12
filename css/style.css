@@ -1053,12 +1053,6 @@ a{
     white-space: nowrap;
 }
 
-h2 {
-    display: block;
-    text-align: flex-start;
-    font-size: 25px;
-    font-weight: 500;
-}
 
 .best-market,
 .handing-shop {
@@ -1145,6 +1139,10 @@ h2 {
 
 .shop-list_txt {
     color: #2b2b2b;
+}
+
+.tex {
+    color: #223a5e;
 }
 
 
@@ -1892,6 +1890,10 @@ h2 {
     text-align: center;
 }
 
+.main-shopping {
+    padding: 8px 0;
+    white-space: nowrap;
+}
 .sub-shopping {
     display: block;
     width: 100%;
@@ -1963,6 +1965,9 @@ h2 {
     border-top: 1px solid #c9a227;
 }
 
+.tex {
+    color: #223a5e;
+}
 
 
 
