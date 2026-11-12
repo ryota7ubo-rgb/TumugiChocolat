@@ -1891,6 +1891,12 @@ a{
     text-align: start;
 }
 
+.shopping-top-border {
+    height: 1.9px;
+    border-radius: 12px solid #c9a227;
+    background-color: #223a5e;
+}
+
 .main-shopping {
     padding: 8px 0;
     white-space: nowrap;
