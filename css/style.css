@@ -1061,11 +1061,12 @@ a{
     margin: 0 auto 30px;
     padding: 8px 35px;
     border-color: #c9a227;
-    text-align: left;
+    text-align: center;
     color: #223a5e;
     margin-left: 0;
     margin-right: auto;
     width: fit-content;
+    padding: 10px 350px;
     font-size: 25px;
 }
 
@@ -1914,10 +1915,10 @@ a{
 
 .best-market,
 .handing-shop {
-    display: table;
-    margin: 0 auto 20px;
+    display: block;
     padding: 7px 20px;
     border-color: #c9a227;
+    text-align: left;
     color: #223a5e;
     width: fit-content;
     max-width: 100%;
