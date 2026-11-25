@@ -1174,19 +1174,17 @@ a{
     white-space: nowrap;
 }
 
-
 .best-market,
 .handing-shop {
     display: block;
     margin: 0 auto 30px;
-    padding: 8px 35px;
     border-color: #c9a227;
     text-align: center;
     color: #223a5e;
+    width: fit-content;
     margin-left: 0;
     margin-right: auto;
-    width: fit-content;
-    padding: 10px 250px;
+    padding: 10px 600px;
     font-size: 25px;
 }
 
@@ -2198,10 +2196,10 @@ a{
 }
 
 
-.best-market,
 .handing-shop {
     display: block;
-    padding: 7px 20px;
+    margin: 0 auto 30px 15px;
+    padding: 7px 0;
     border-color: #c9a227;
     text-align: left;
     color: #223a5e;
@@ -2210,6 +2208,19 @@ a{
     box-sizing: border-box;
     font-size: 17px;
 } 
+
+.best-market {
+    display: block;
+    margin: 0 auto 30px 15px;
+    padding: 7px 0;
+    border-color: #c9a227;
+    text-align: left;
+    color: #223a5e;
+    width: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    font-size: 17px;
+}
 
 .font-english {
     font-family: "Shippori Mincho", serif;
@@ -2236,7 +2247,7 @@ a{
 }
 
 .shop-contact-link {
-    margin: 12px 0 0;
+    margin: 12px 0 0 15px;
     text-align: left;
 }
 
