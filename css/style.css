@@ -548,7 +548,7 @@ a{
     color: #f5f1e8;
 }
 
-.top-commitment-wrap .top-commitment-info:nth-child(2) {
+/* .top-commitment-wrap .top-commitment-info:nth-child(2) {
         display: grid;
         grid-template-columns: 1fr;
     }
@@ -559,7 +559,7 @@ a{
 
     .top-commitment-wrap .top-commitment-info:nth-child(2) > img {
         order: 1;
-    }
+    } */
 
 
 
