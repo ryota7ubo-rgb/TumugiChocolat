@@ -847,13 +847,13 @@ a{
     letter-spacing: 3px;
 }
 .story-title-border{
-    width: 1920px;
     color: #fff;
     border-bottom: 1px solid #C9A227;
     display: flex;
     justify-content: start;
     background-color: #223A5E;
     height: 70px;
+    width: 100%;
 }
 .story-mini-border{
     width: 64px;
@@ -940,7 +940,6 @@ a{
     display: flex;
     justify-content: space-between;
     padding: 64px 0;
-    width: 1032px;
 }
 .story-main-border{
     border-top: 1px solid #C9A227;
@@ -2097,11 +2096,25 @@ a{
     display: grid;
     grid-template-columns: auto;
 }
-
-
-
-
-
+.story-container0{
+    justify-content: center;
+}
+.story-container1{
+    margin: 0;
+}
+.story-title-border{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.story-main-img{
+    width: 200px;
+    height: 200px;
+}
+.story-container{
+    padding: 0;
+    margin: 0;
+}
 
 
 
