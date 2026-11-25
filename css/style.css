@@ -1167,8 +1167,10 @@ a{
     padding: 10px 0;
     border-bottom: 1px solid #c9a227;
 }
+
 .sub-shopping {
-    padding: 20px;
+    padding-left: 110px;
+    padding-top: 30px;
     white-space: nowrap;
 }
 
@@ -1184,7 +1186,7 @@ a{
     margin-left: 0;
     margin-right: auto;
     width: fit-content;
-    padding: 10px 350px;
+    padding: 10px 250px;
     font-size: 25px;
 }
 
@@ -1232,6 +1234,12 @@ a{
     height: 450px; 
 }
 
+.shop-contact-link {
+    display: block;
+    margin: 12px 0 0;
+    text-align: left;
+}
+
 .shop-list {
     width: 100%;
     list-style: none;
@@ -1261,6 +1269,7 @@ a{
 
 .shop-list_txt {
     color: #2b2b2b;
+
 }
 
 
@@ -2226,6 +2235,11 @@ a{
     display: block;
 }
 
+.shop-contact-link {
+    margin: 12px 0 0;
+    text-align: left;
+}
+
 .shop-list {
     width: 100%;
     list-style: none;
@@ -2448,4 +2462,3 @@ a{
 
 
 }
-
