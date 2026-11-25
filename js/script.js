@@ -1,4 +1,4 @@
-const menuToggle = document.querySelector(".menu-toggle");
+﻿const menuToggle = document.querySelector(".menu-toggle");
 const siteNavigation = document.querySelector("#site-navigation");
 const pageHeader = document.querySelector(".page-header");
 
@@ -37,6 +37,21 @@ if (menuToggle && siteNavigation && pageHeader) {
         }
     });
 }
+const fixedHeader = document.querySelector('.page-header');
+
+if (fixedHeader) {
+    fixedHeader.classList.add('is-fixed');
+    document.body.classList.add('has-fixed-header');
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 700) {
+            fixedHeader.classList.add('is-fixed');
+            document.body.classList.add('has-fixed-header');
+        }
+    });
+}
+
+
 
 const heroSlider = document.querySelector("#top-hero-slider");
 

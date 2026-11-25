@@ -1,21 +1,24 @@
-/* フォント */
+﻿/* フォント */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
 
 .font-main {
-    font-family: "shippori Mincho", serif;
+    font-family: "Shippori Mincho", serif;
 }
 
 .font-sub {
-    font-family: "Noto Serif JP", sans-serif;
+    font-family: "Shippori Mincho", serif;
 }
 /* webページ全体共通スタイル */
 html{
-   font-family: "Noto Serif JP", serif;
+   font-family: "Shippori Mincho", serif;
    font-size: 16px;
    background-color: #F5F1E8;
    color: #2B2B2B;
    line-height: 1.8;
+   scroll-behavior: smooth;
+   scroll-padding-top: 96px;
 }
 
 
@@ -31,6 +34,24 @@ html{
     margin-left: 24px;
     position: relative;
     z-index: 10;
+    transition: box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.page-header.is-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    padding: 0 24px;
+    box-sizing: border-box;
+    background-color: rgba(245, 241, 232, 0.96);
+    box-shadow: 0 2px 12px rgba(43, 43, 43, 0.08);
+    z-index: 50;
+}
+
+body.has-fixed-header {
+    padding-top: 80px;
 }
 
 .page-header a{
@@ -38,7 +59,7 @@ html{
 }
 
 .page-main-title{
-    font-family: "Noto Serif JP", sans-serif;
+    font-family: "Shippori Mincho", serif;
     font-size: 1.7rem;
     margin-bottom: 16px;
     font-weight: 400;
@@ -57,7 +78,7 @@ html{
 }
 
 .page-transition a{
-    font-family: "Noto+Sans+JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     color: #3D3936;
     text-decoration: none;
     transition: transform 0.3s; 
@@ -89,13 +110,13 @@ html{
 /* h */
 h1,h2,h3{
     line-height: 1.5;
-    font-family: "Noto Serif JP", sans-serif;
+    font-family: "Shippori Mincho", serif;
 }
 
 /* p */
 p{
     line-height: 1.5;
-    font-family: "Noto+Sans+JP", sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
 }
 
 /* img */
@@ -1137,7 +1158,7 @@ a{
 }
 
 .main-shopping{ 
-    font-family: "shippori Mincho", serif;
+    font-family: "Shippori Mincho", serif;
     padding: 12px 110px;
     font-size: 1.1rem;
 }
@@ -1151,23 +1172,19 @@ a{
     white-space: nowrap;
 }
 
-h2 {
-    display: block;
-    text-align: flex-start;
-    font-size: 25px;
-    font-weight: 500;
-}
 
 .best-market,
 .handing-shop {
-    display: table;
+    display: block;
     margin: 0 auto 30px;
     padding: 8px 35px;
     border-color: #c9a227;
+    text-align: center;
     color: #223a5e;
     margin-left: 0;
     margin-right: auto;
     width: fit-content;
+    padding: 10px 350px;
     font-size: 25px;
 }
 
@@ -1188,6 +1205,7 @@ h2 {
     text-align: left;
     font-weight: 600;
     border-top: 1px solid #c9a227;
+    white-space: nowrap;
 }
 
 .shop tr th:first-child {
@@ -1244,6 +1262,271 @@ h2 {
 .shop-list_txt {
     color: #2b2b2b;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact用 */
+.contact-top {
+    background-color: #223A5E;
+    color: #fff;
+    text-align: left;
+    box-sizing: border-box;   /* padding を足しても高さ200pxのまま */
+    height: 190px;
+    padding: 40px 0;        /* ← ここを増やすほど文字が下がる */
+    border-top: 1px solid #c9A227;
+}
+   
+.contact-top h1 {
+    font-family: "Shippori Mincho", serif;
+    padding: 12px 110px;
+    font-size: 2rem;
+    border-top: 1px solid #c9A227;
+}
+
+.contact-top h1 span {
+   padding: 10px 0;
+   border-bottom: 1px solid #c9A227;
+}
+
+.contact-top p {
+    font-family: "Noto Sans JP", sans-serif;
+    margin-left: 100px;
+    font-size: 0.75rem;
+    padding: 15px 10px;
+}
+
+.contact-main {
+    display: flex;
+    gap: 80px;                 /* 左右カラムの間隔 */
+    padding: 60px 120px;       /* 上下 左右 (帯の左右100pxと揃える) */
+    background-color: #F5F1E8; /* デザインのベージュ。色は好みで調整 */
+    margin : 0 16px
+}
+
+.contact-info,
+.contact-form {
+    flex: 1;                   /* 左右を同じ幅に */
+}
+
+.contact-info {
+    height: 330px;
+}
+
+.contact-form {
+    height: 560px;
+}
+
+.contact-info h2 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.5rem;
+    color: #223A5E;
+    padding: 12px 0;
+    border-bottom: 1px solid #c9A227;
+}
+
+.contact-table  {
+    width: 100%;
+    border-collapse: collapse;  /* 線のすき間をなくす */
+}
+
+.contact-table td {
+    padding: 20px 8px;
+    font-size: 1rem;
+    border-bottom: 1px solid #c9A227;
+}
+
+.contact-table td p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
+    color: #6D2E46;
+}
+.contact-table td:first-child {
+    width: 30%;                 /* 「社名」「電話」の列の幅 */
+}
+
+.input-form {
+   border-top: dashed;
+   border-left: dashed;
+   border-bottom: dashed; 
+   border-color:#c9A227;
+   padding: 25px;
+   border-width: 1px;
+}
+
+.contact-form h2 {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1.5rem;
+    color: #223A5E;
+    padding: 5px 0;
+}
+
+.contact-form p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75em;
+    margin-bottom: 2px;
+    color: #6D2E46;
+    display: block;
+    margin-bottom: 8px; 
+}
+
+.form-group label {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
+    margin-bottom: 2px;
+    color: #6D2E46;
+    display: block;          
+}
+
+.contact-form p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 0.75rem;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    height: 40px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;               /* 横幅いっぱい */
+    box-sizing: border-box;    /* paddingを入れても はみ出さない */
+    padding: 10px;
+    font-size: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.form-group textarea {
+    height: 85px;
+    resize: vertical;          /* 縦方向だけ大きさ変更できる */
+}
+
+.contact-form button {
+    padding: 8px 40px;
+    background-color: #223A5E; /* 帯と同じ紺色 */
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 0.75rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.85;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1657,18 +1940,97 @@ h2 {
 /* フォントサイズを変えて */
     
 /* goods用 */
+.goods-main-title{
+    padding: 60px 15px 50px 15px;
+    border-top: 2px solid #c9A227;
+}
 
+.goods-title-border{
+    padding: 0;
+    border-top: none;
+}
 
+.goods-title-border h1{
+    padding-right: 200px;
+}
 
+.goods-title-text p {
+    line-height: 1.8;
+}
 
+.goods-title-text span{
+    padding-bottom: 80px;
+}
 
+.goods-contents {
+    margin: 50px 15px;
+}
 
+.goods-contents-item {
+    padding: 20px 0;
+    gap: 0;
+    display: block;
+}
 
+.goods-contents-item img {
+    width: 100%;
+    height: 300px;
+    margin: 12px 0 12px 0;
+}
 
+.goods-contents-item .goods-contents-color {
+    padding-bottom: 12px;
+}
 
+.goods-contents-item h2 {
+    font-size: 2rem;
+    padding-bottom: 12px;
+}
 
+.goods-contents-item .goods-contents-text {
+    line-height: 1.8;
+}
 
+.goods-shop {
+    margin: 60px 0 80px 0;
+}
 
+.goods-shop-item ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+    align-content: center;
+}
+
+.goods-shop-item li {
+    padding: 12px;
+    height: 48px;
+    width: 48px;
+    text-align: center;
+    align-content: center;
+    border: 2px solid #000;
+    border-radius: 4px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+.goods-shop-item p {
+    font-size: 18px;
+}
+
+.goods-shop-tumugi {
+    font-size: 18px;
+    margin: 50px 0 20px 0;
+}
+
+.goods-button {
+    padding: 15px 70px;
+    font-size: 20px;
+}
+
+.pakeji{
+    font-size: 2rem;
+}
 
 
 
@@ -1803,9 +2165,19 @@ h2 {
     padding: 20px 0;
     height: auto;
     color: #f5f1f5;
-    text-align: center;
+    text-align: start;
 }
 
+.shopping-top-border {
+    height: 1.9px;
+    border-radius: 12px solid #c9a227;
+    background-color: #223a5e;
+}
+
+.main-shopping {
+    padding: 8px 0;
+    white-space: nowrap;
+}
 .sub-shopping {
     display: block;
     width: 100%;
@@ -1816,19 +2188,13 @@ h2 {
     background-size: 100% 100%;
 }
 
-h2 {
-    display: block;
-    text-align: center;
-    font-weight: 500;
-    font-size: 25px;
-}
 
 .best-market,
 .handing-shop {
-    display: table;
-    margin: 0 auto 20px;
+    display: block;
     padding: 7px 20px;
     border-color: #c9a227;
+    text-align: left;
     color: #223a5e;
     width: fit-content;
     max-width: 100%;
@@ -1837,7 +2203,7 @@ h2 {
 } 
 
 .font-english {
-    font-family: Shippori Mincho, serif;
+    font-family: "Shippori Mincho", serif;
 }
 
 .map {
@@ -1947,6 +2313,7 @@ h2 {
 
 
 
+
 /* contact用 */
  .contact-top {
         text-align: left;  /* 左寄せ */
@@ -1971,7 +2338,7 @@ h2 {
         padding: 40px 20px;      /* 上下 左右 */
     }
     .contact-info h2 {
-        font-family: "shippori Mincho", serif;
+        font-family: "Shippori Mincho", serif;
         font-size: 1.5rem;
         color: #223A5E;
         padding: 15px 0;
@@ -2081,3 +2448,4 @@ h2 {
 
 
 }
+
