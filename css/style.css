@@ -233,19 +233,48 @@ a{
 /* top用 */
 .top-hero {
     position: relative;
-    background-image: url('../images/2b2b2b.png');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    overflow: hidden;
     width: 100%;
     height: clamp(300px, 42vw, 836px);
+    background-color: #2b2b2b;
+}
+
+.top-hero-slider {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+.top-hero-slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.8s ease;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.top-hero-slide.is-active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.top-hero-slider::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(13, 18, 22, 0.42), rgba(13, 18, 22, 0.15));
 }
 
 .top-hero-title {
     position: absolute;
     left: clamp(48px, 7vw, 114px);
     top: clamp(100px, 20vw, 260px);
+    z-index: 1;
 }
+
 .top-hero-main-title {
     color: #F5F1E8;
     writing-mode: vertical-rl;
@@ -265,6 +294,35 @@ a{
     letter-spacing: 0.25em;
     color: #F5F1E8;
     margin-top: 30px;
+}
+
+.top-hero-dots {
+    position: absolute;
+    left: 50%;
+    top: 95%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    z-index: 2;
+}
+
+.top-hero-dot {
+    width: 22px;
+    height: 2px;
+    border: none;
+    border-radius: 999px;
+    background: rgba(245, 241, 232, 0.5);
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.top-hero-dot.is-active {
+    width: 22px;
+    background: #C9A227;
+    box-shadow: none;
 }
 
 .top-product {
@@ -322,7 +380,8 @@ a{
     font-size: clamp(2rem, 2.2vw, 2.8rem);
     line-height: 1.3;
     font-weight: 600;
-    margin: 0 0 16px;
+    margin: 0 auto 16px auto;
+    padding: 0 40px;
     font-family: "Shippori Mincho", serif;
 }
 
@@ -371,7 +430,6 @@ a{
     display: inline-block;
     margin-top: 0;
     padding: 12px 28px;
-    border: 1px solid #C9A227;
     background-color: #223a5e;
     color: #f5f1e8;
     font-size: 0.9rem;
@@ -415,6 +473,10 @@ a{
     padding: 64px 192px;
 }
 
+.top-commitment-title {
+    margin-left: 64px;
+}
+
 .top-commitment-title-sub::before {
     content: "◆";
     color: #C9A227;
@@ -441,14 +503,19 @@ a{
     color: #f5f1e8;
 }
 
-.top-commitoment-info {
+.top-commitment-wrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 80px;
+    flex-direction: column;
+    gap: 32px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 40px;
+    padding: 0 40px 60px;
+}
+
+.top-commitment-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 }
 
 .top-commitment-info img {
@@ -456,12 +523,43 @@ a{
     height: 317px;
     object-fit: cover;
     flex-shrink: 0;
+    display: block;
 }
 
 .top-commitment-item {
-    
+    flex: 1;
 }
 
+.top-commitment-item-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #c9A227;
+}
+
+.top-commitment-item-description {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    color: #f5f1e8;
+}
+
+.top-commitment-item-text {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #f5f1e8;
+}
+
+.top-commitment-wrap .top-commitment-info:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .top-commitment-wrap .top-commitment-info:nth-child(2) .top-commitment-item {
+        order: 2;
+    }
+
+    .top-commitment-wrap .top-commitment-info:nth-child(2) > img {
+        order: 1;
+    }
 
 
 
@@ -1703,65 +1801,126 @@ a{
     }
 
 /* top用 */
+    .top-hero {
+        height: 440px;
+    }
 
+    /* .top-hero-title {
+        left: 20px;
+        top: 56px;
+    } */
 
+    .top-hero-main-title {
+        font-size: 24px;
+        letter-spacing: 0.14rem;
+        padding-left: 12px;
+    }
 
+    .top-hero-sub-title {
+        margin-top: 18px;
+        font-size: 0.68rem;
+        letter-spacing: 0.12em;
+    }
 
+    .top-hero-dots {
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        gap: 8px;
+    }
 
+    .top-hero-dot {
+        width: 18px;
+    }
 
+    .top-hero-dot.is-active {
+        width: 30px;
+    }
 
+    .top-product-content  {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        place-items: center;
+    }
 
+    .top-product-img {
+        width: 100%;
+        max-width: 600px;
+    }
 
+    .top-product-info-type {
+        font-size: 13px;
+    }
 
+    .top-product-info-title {
+        text-align: start;
+        padding: 0;
+        font-size: 20px;
+    }
 
+    .top-product-info-description {
+        font-size: 15px;
+    }
 
+    .top-info h3 {
+        font-size: 14px;
+    }
 
+    .top-info p {
+        font-size: 15px;
+    }
 
+    .top-product-note {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
 
+    .top-btn {
+        padding: 12px 50px;
+    }
 
+    .top-commitment-title {
+        margin-left: 0;
+        padding: 50px 40px ;
+    }
 
+    .top-commitment-title-sub {
+        margin-bottom: 23px;
+    }
 
+    .top-commitment-title-main {
+        text-align: start;
+    }
 
+    .top-commitment-info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .top-commitment-info img {
+        width: 100%;
+        max-width: 600px;
+    }
 
+    .top-commitment-wrap .top-commitment-info:nth-child(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
+    .top-commitment-wrap .top-commitment-info:nth-child(2) .top-commitment-item {
+        order: 2;
+    }
 
+    .top-commitment-wrap .top-commitment-info:nth-child(2) > img {
+        order: 1;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .top-commitment {
+        padding: 0;
+    }
+/* フォントサイズを変えて */
+    
 /* goods用 */
 .goods-main-title{
     padding: 60px 15px 50px 15px;
