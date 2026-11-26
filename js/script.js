@@ -57,9 +57,9 @@ const heroSlider = document.querySelector("#top-hero-slider");
 
 if (heroSlider) {
     const slideImages = [
-        "images/karigazou.jpg",
-        "images/11.gif",
-        "images/31.gif",
+        "images/tyoko_hero.png",
+        "images/tyokoaic_hero.png",
+        "images/tyokokuma_hero.png",
     ];
 
     let currentIndex = 0;
