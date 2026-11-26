@@ -534,6 +534,11 @@ th{
 
 .goods-title-text h1 {
     margin-bottom: 60px;
+    font-size: 48px;
+}
+
+.goods-title-text p {
+    font-size: 16px;
 }
 
 .goods-title-text span{
@@ -541,19 +546,53 @@ th{
     border-bottom: 2px solid #c9A227;
 }
 
+.goods-content {
+    padding: 64px 260px 64px 260px;
+    border-color: #F5F1E8;
+}
+
 .goods-contents {
-    margin: 120px 240px 0 240px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 0;
+}
+
+.goods-contents-img img{
+    width: 100%;
+    height: 100%;
 }
 
 .goods-contents-item {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 100px;
-    padding: 120px 0;
+    padding: 64px 0;
 }
+
+.goods-contents-item section{
+    width: 500px;
+    height: 168px;
+    margin-bottom: 96px;
+}
+
+.goods-contents-color {
+    color: #6D2E46;
+    font-size: 20px;
+}
+
+.goods-contents-item h2 {
+    color: #223A5E;
+    font-size: 32px;
+}
+
+.goods-contents-text {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
 
 .goods-border-top {
     border-top: 2px solid #C9A227;
@@ -568,29 +607,12 @@ th{
     border-bottom: 2px solid #C9A227;
 }
 
-.goods-contents-color {
-    color: #C8956D;
-}
-
-.goods-contents-item h2 {
-    color: #223A5E;
-}
-
-.goods-contents-text {
-    width: 100%;
-    font-size: 1.2rem;
-}
-
-.goods-contents-item img {
-    width: 50%;
-    height: 50%;
-}
-
 .goods-shop {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin: 120px 0;
+    /* margin: 120px 0; */
+    padding: 64px 0 80px 0;
 }
 
 .goods-shop-item {
@@ -618,7 +640,8 @@ th{
     align-content: center;
     border: 2px solid #000;
     border-radius: 4px;
-    font-weight: bolder;
+    font-weight: 500;
+    font-family: "Noto Sans JP";
 }
 
 .goods-shop-4 {
@@ -626,15 +649,16 @@ th{
 }
 
 .goods-shop-tumugi {
-    font-size: 20px;
+    font-size: 23px;
     margin: 20px 0;
 }
 
 .goods-button {
     background-color: #223A5E;
     color: #fff;
-    padding: 10px 50px;
+    padding: 16px 70px;
     border-radius: 5px;
+    font-size: 24px;
 }
 
 /* story用 */
@@ -1590,20 +1614,21 @@ h2 {
     padding-bottom: 80px;
 }
 
+.goods-content{
+    padding: 0;
+}
 .goods-contents {
     margin: 50px 15px;
 }
 
 .goods-contents-item {
-    padding: 20px 0;
-    gap: 0;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
-.goods-contents-item img {
+.goods-contents-img img{
     width: 100%;
-    height: 300px;
-    margin: 12px 0 12px 0;
+    height: 100%
 }
 
 .goods-contents-item .goods-contents-color {
@@ -1628,6 +1653,7 @@ h2 {
     display: flex;
     gap: 24px;
     align-content: center;
+    text-align: center;
 }
 
 .goods-shop-item li {
